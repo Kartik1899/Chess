@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Engine</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">	
+</head>
+<body>
+    
+    <header>
+        <h3>Chess Engine</h3>			
+    </header>	
+    <div id="FenInDiv">
+        Fen:<br/>
+        <input type="text" id="fenIn"/>		
+        <button type="button" id="SetFen">Set Position</button>			
+    </div>		
+    <div id="Board">
+    </div>
+    <div id="EngineOutput">Thinking Time: <br/>
+        <select id="ThinkTimeChoice">
+        <option value="1">1s</option>
+          <option value="2">2s</option>
+          <option value="4">4s</option>
+          <option value="6">6s</option>
+          <option value="8">8s</option>
+          <option value="10">10s</option>
+        </select><br/><br/><br/>
+        <span id="ScoreOut">Score:</span><br/>
+        <button type="button" id="SearchButton">Make Move</button><br/>
+        <button type="button" id="NewGameButton">New Game</button><br/>
+        <button type="button" id="TakeButton">Take Back</button><br/><br/><br/>
+        <span id="GameStatus"></span>
+    </div>
+    <script src="src/jquery-3.5.1.min.js"></script>		
+    <script src="src/main.js"></script>	
+    <script src="src/printer.js"></script>	
+    <script src="src/board.js"></script>	
+    <script src="src/moveCreator.js"></script>	
+    <script src="src/moveMaker.js"></script>		
+    <script src="src/scorer.js"></script>	
+    <script src="src/moveTable.js"></script>
+    <script src="src/engineSearch.js"></script>
+    <script src="src/interface.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
